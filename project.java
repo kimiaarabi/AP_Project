@@ -10,4 +10,28 @@ class Music{
         this.isLocal = isLocal;
         this.isDownloaded = isDownloaded;
     }
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public String getArtist() {
+        return artist;
+    }
+    public void setArtist(String artist) {
+        this.artist = artist;
+    }
+    public boolean isLocal() {
+        return isLocal;
+    }
+    public void setLocal(boolean local) {
+        isLocal = local;
+    }
+    public boolean isDownloaded() {
+        return isDownloaded;
+    }
+    public void setDownloaded(boolean downloaded) {
+        this.isDownloaded = downloaded;
+    }
 }
