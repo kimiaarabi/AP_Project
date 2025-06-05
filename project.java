@@ -231,3 +231,7 @@ class PremiumSubscription{
     public int getDurationInMonths() { return durationInMonths; }
     public double getPrice() { return price; }
 }
+
+class Payment{
+    
+}
