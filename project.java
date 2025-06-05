@@ -137,4 +137,30 @@ class User{
         this.profileImagePath = "";
         this.subscriptionType = "Normal";
     }
+    public String getName() {
+        return name;
+    }
+    public String getEmail() {
+        return email;
+    }
+    public String getPassword() {
+        return password;
+    }
+    public String getSubscriptionType() {
+        return subscriptionType;
+    }
+    public void setSubscriptionType(String subscriptionType) {
+        if(subscriptionType.equals("Normal") || subscriptionType.equals("Premium")){
+            this.subscriptionType = subscriptionType;
+        }
+    }
+    public String getProfileImagePath() {
+        return profileImagePath;
+    }
+    public void setProfileImagePath(String profileImagePath) {
+        this.profileImagePath = profileImagePath;
+    }
+    public double getCredit() {
+        return credit;
+    }
 }
