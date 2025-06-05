@@ -388,4 +388,9 @@ class MusicShop{
         }
         return result;
     }
+    public List<ShopMusic> sortByRating(){
+        List<ShopMusic> sorted = new ArrayList<>(musics);
+        sorted.sort(Comparator.comparing(ShopMusic :: getRating).reversed());
+        return sorted;
+    }
 }
