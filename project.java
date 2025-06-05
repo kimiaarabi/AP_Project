@@ -215,5 +215,18 @@ class User{
 class PremiumSubscription{
     private int durationInMonths;
     private double price;
+    public PremiumSubscription(int durationInMonths) {
+        this.durationInMonths = durationInMonths;
+        if(durationInMonths == 1){
+            this.price = 100;
+        }
+        else if(durationInMonths == 3){
+            this.price = 250;
+        }
+        else if(durationInMonths == 12){
+            this.price = 900;
+        }
+
+    }
 
 }
