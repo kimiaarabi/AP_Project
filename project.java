@@ -233,5 +233,11 @@ class PremiumSubscription{
 }
 
 class Payment{
-    
+    public static boolean processPayment(User user, PremiumSubscription sub, String cardNumber, String cardPass) {
+        if (cardNumber.length() == 16 && cardPass.length() == 4) {
+            user.decreaseCredit(sub.getPrice());
+            return true;
+        }
+        return false;
+    }
 }
