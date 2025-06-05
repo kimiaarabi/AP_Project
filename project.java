@@ -316,3 +316,7 @@ class LoginService{
         return true;
     }
 }
+
+class ShopMusic{
+    
+}
