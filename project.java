@@ -244,4 +244,7 @@ class Payment{
 
 class UserDataBase{
     private static List<User> users = new ArrayList<>();
+    public static void AddUser(User user){
+        users.add(user);
+    }
 }
