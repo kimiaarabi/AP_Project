@@ -241,3 +241,7 @@ class Payment{
         return false;
     }
 }
+
+class UserDataBase{
+    
+}
