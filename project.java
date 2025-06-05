@@ -180,4 +180,28 @@ class User{
         this.credit = 0;
         this.subscriptionType = "";
     }
+    public boolean PasswordValidation(String password){
+        if(password.length() < 8){
+            return false ;
+        }
+        if(password.equals(this.name) ){
+            return false ;
+        }
+        boolean hasUppercase = false;
+        boolean hasLowercase = false;
+        boolean hasDigit = false;
+        for(char c : password.toCharArray()){
+            if(Character.isUpperCase(c)){
+                hasUppercase = true;
+            }
+            if(Character.isLowerCase(c)){
+                hasLowercase = true;
+            }
+            if(Character.isDigit(c)){
+                hasDigit = true;
+            }
+        }
+        return hasUppercase && hasLowercase && hasDigit;
+    }
+
 }
