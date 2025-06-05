@@ -398,4 +398,9 @@ class MusicShop{
         sorted.sort(Comparator.comparing(ShopMusic :: getPrice));
         return sorted;
     }
+    public List<ShopMusic> sortByDownloadCount(){
+        List<ShopMusic> sorted = new ArrayList<>(musics);
+        sorted.sort(Comparator.comparing(ShopMusic :: getDownloadCount));
+        return sorted;
+    }
 }
