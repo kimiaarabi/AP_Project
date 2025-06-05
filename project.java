@@ -213,5 +213,7 @@ class User{
 }
 
 class PremiumSubscription{
-    
+    private int durationInMonths;
+    private double price;
+
 }
