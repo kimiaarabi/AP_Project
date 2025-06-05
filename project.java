@@ -243,5 +243,5 @@ class Payment{
 }
 
 class UserDataBase{
-    
+    private static List<User> users = new ArrayList<>();
 }
