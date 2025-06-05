@@ -47,4 +47,23 @@ class Category{
         this.name = name;
         this.musics = new ArrayList<>();
     }
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public List<Music> getMusics() {
+        return musics;
+    }
+    public void setMusics(List<Music> musics) {
+        this.musics = musics;
+    }
+
+    public void addMusic(Music music){
+        this.musics.add(music);
+    }
+    public void removeMusic(Music music){
+        this.musics.remove(music);
+    }
 }
