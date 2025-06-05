@@ -300,3 +300,7 @@ class SignUpService{
         return true;
     }
 }
+
+class LoginService{
+    
+}
