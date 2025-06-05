@@ -266,5 +266,37 @@ class UserDataBase{
 }
 
 class SignUpService{
-    
+    public boolean signup(String username,String email,String password){
+        User user = UserDataBase.FindByUsername(username);
+        if(user != null){
+            return false;
+        }
+
+        if(password.length() < 8){
+            return false ;
+        }
+        if(password.equals(username) ){
+            return false ;
+        }
+        boolean hasUppercase = false;
+        boolean hasLowercase = false;
+        boolean hasDigit = false;
+        for(char c : password.toCharArray()){
+            if(Character.isUpperCase(c)){
+                hasUppercase = true;
+            }
+            if(Character.isLowerCase(c)){
+                hasLowercase = true;
+            }
+            if(Character.isDigit(c)){
+                hasDigit = true;
+            }
+        }
+        boolean result = hasUppercase && hasLowercase && hasDigit;
+        if(!result){
+            return false ;
+        }
+        UserDataBase.AddUser(user);
+        return true;
+    }
 }
