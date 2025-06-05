@@ -37,5 +37,6 @@ class Music{
 }
 
 class Category{
-    
+    private String name;
+    private List<Music> musics;
 }
