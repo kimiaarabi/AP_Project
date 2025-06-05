@@ -302,5 +302,17 @@ class SignUpService{
 }
 
 class LoginService{
-    
+    public boolean login(String username, String password){
+        if(username==null || username.isEmpty() || password==null || password.isEmpty()){
+            return false;
+        }
+        User user = UserDataBase.FindByUsername(username);
+        if(user == null){
+            return false;
+        }
+        if(!user.getPassword().equals(password)){
+            return false;
+        }
+        return true;
+    }
 }
