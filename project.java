@@ -35,3 +35,7 @@ class Music{
         this.isDownloaded = downloaded;
     }
 }
+
+class Category{
+    
+}
