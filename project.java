@@ -378,4 +378,14 @@ class MusicShop{
     public MusicShop(){
         musics = new ArrayList<>();
     }
+    public List<ShopMusic> searchMusic(String name){
+        List<ShopMusic> result = new ArrayList<>();
+        String lowerCase = name.toLowerCase();
+        for(ShopMusic music : musics){
+            if(music.getName().toLowerCase().contains(lowerCase)){
+                result.add(music);
+            }
+        }
+        return result;
+    }
 }
