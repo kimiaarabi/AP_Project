@@ -372,3 +372,7 @@ class ShopMusic{
         downloadCount++;
     }
 }
+
+class MusicShop{
+    
+}
