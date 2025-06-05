@@ -374,5 +374,8 @@ class ShopMusic{
 }
 
 class MusicShop{
-    
+    private List<ShopMusic> musics;
+    public MusicShop(){
+        musics = new ArrayList<>();
+    }
 }
