@@ -39,4 +39,12 @@ class Music{
 class Category{
     private String name;
     private List<Music> musics;
+    public Category(String name, List<Music> musics){
+        this.name = name;
+        this.musics = musics;
+    }
+    public Category(String name){
+        this.name = name;
+        this.musics = new ArrayList<>();
+    }
 }
