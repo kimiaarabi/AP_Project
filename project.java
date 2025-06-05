@@ -129,4 +129,12 @@ class User{
     private String subscriptionType;
     private String profileImagePath;
     private double credit;
+    public User(String name, String email, String password){
+        this.name = name;
+        this.email = email;
+        this.password = password;
+        this.credit = 0;
+        this.profileImagePath = "";
+        this.subscriptionType = "Normal";
+    }
 }
