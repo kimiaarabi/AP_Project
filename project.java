@@ -114,4 +114,10 @@ class MusicLibrary{
         result.sort(Comparator.comparing(Music::getName));
         return result;
     }
+    public List<Music> sortByArtist(){
+        List<Music> result = new ArrayList<>(allmusics);
+        result.sort(Comparator.comparing(Music::getArtist));
+        return result;
+    }
+
 }
