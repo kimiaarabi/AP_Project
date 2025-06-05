@@ -67,3 +67,6 @@ class Category{
         this.musics.remove(music);
     }
 }
+class MusicLibrary{
+    
+}
