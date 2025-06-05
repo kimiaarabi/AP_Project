@@ -173,4 +173,11 @@ class User{
             this.credit -= amount;
         }
     }
+    public void deleteAccount() {
+        this.name = "";
+        this.email = "";
+        this.profileImagePath = "";
+        this.credit = 0;
+        this.subscriptionType = "";
+    }
 }
