@@ -247,4 +247,12 @@ class UserDataBase{
     public static void AddUser(User user){
         users.add(user);
     }
+    public static User FindByEmail(String email){
+        for(User user : users){
+            if(user.getEmail().equals(email)){
+                return user;
+            }
+        }
+        return null;
+    }
 }
