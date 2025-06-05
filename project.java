@@ -403,4 +403,15 @@ class MusicShop{
         sorted.sort(Comparator.comparing(ShopMusic :: getDownloadCount));
         return sorted;
     }
+    public void download(ShopMusic music){
+        if(!music.isDownloaded()){
+            music.setDownloaded(true);
+            music.increaseDownloadCount();
+            System.out.println(music.getName() + " has been downloaded");
+        }
+        else{
+            System.out.println(music.getName() + " is already downloaded");
+        }
+
+    }
 }
