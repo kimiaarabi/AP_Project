@@ -123,5 +123,10 @@ class MusicLibrary{
 }
 
 class User{
-    
+    private String name;
+    private String email;
+    private String password;
+    private String subscriptionType;
+    private String profileImagePath;
+    private double credit;
 }
