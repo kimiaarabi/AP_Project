@@ -68,5 +68,8 @@ class Category{
     }
 }
 class MusicLibrary{
-    
+    List<Music> allmusics;
+    public MusicLibrary(){
+        this.allmusics = new ArrayList<>();
+    }
 }
