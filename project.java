@@ -78,4 +78,22 @@ class MusicLibrary{
     public void removeMusic(Music music){
         allmusics.remove(music);
     }
+    public List<Music> getDownloadedMusics(){
+        List<Music> downloaded = new ArrayList<>();
+        for(Music music : allmusics){
+            if(music.isDownloaded()){
+                downloaded.add(music);
+            }
+        }
+        return downloaded;
+    }
+    public List<Music> getLocalMusics(){
+        List<Music> local = new ArrayList<>();
+        for(Music music : allmusics){
+            if(music.isLocal()){
+                local.add(music);
+            }
+        }
+        return local;
+    }
 }
