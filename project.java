@@ -163,4 +163,14 @@ class User{
     public double getCredit() {
         return credit;
     }
+    public void increaseCredit(double credit) {
+        if(credit > 0){
+            this.credit += credit;
+        }
+    }
+    public void decreaseCredit(double amount) {
+        if(amount > 0 && credit > amount){
+            this.credit -= amount;
+        }
+    }
 }
