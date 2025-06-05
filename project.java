@@ -324,4 +324,12 @@ class ShopMusic{
     private double price;
     private int downloadCount;
     private boolean isDownloaded;
+    public ShopMusic(String name, String artist, int rating, double price, int downloadCount){
+        isDownloaded = false;
+        this.name = name;
+        this.artist = artist;
+        this.rating = rating;
+        this.price = price;
+        this.downloadCount = downloadCount;
+    }
 }
