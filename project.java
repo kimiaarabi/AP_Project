@@ -72,4 +72,10 @@ class MusicLibrary{
     public MusicLibrary(){
         this.allmusics = new ArrayList<>();
     }
+    public void addMusic(Music music){
+        allmusics.add(music);
+    }
+    public void removeMusic(Music music){
+        allmusics.remove(music);
+    }
 }
