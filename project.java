@@ -255,4 +255,12 @@ class UserDataBase{
         }
         return null;
     }
+    public static User FindByUsername(String username){
+        for(User user : users){
+            if(user.getName().equals(username)){
+                return user;
+            }
+        }
+        return null;
+    }
 }
