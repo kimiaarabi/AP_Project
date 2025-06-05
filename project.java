@@ -96,4 +96,17 @@ class MusicLibrary{
         }
         return local;
     }
+    public List<Music> searchByName(String keyword){
+        List<Music> musics1 = new ArrayList<>(allmusics);
+        List<Music> result = new ArrayList<>();
+        String lowerCaseKeyword = keyword.toLowerCase();
+        for (Music music : musics1){
+            String title = music.getName().toLowerCase();
+            String artist = music.getArtist().toLowerCase();
+            if(title.contains(lowerCaseKeyword) || artist.contains(lowerCaseKeyword)){
+                result.add(music);
+            }
+        }
+        return result;
+    }
 }
