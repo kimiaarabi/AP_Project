@@ -203,5 +203,11 @@ class User{
         }
         return hasUppercase && hasLowercase && hasDigit;
     }
+    public void EditProfile(String name, String password){
+        this.name = name;
+        if(PasswordValidation(password)){
+            this.password = password;
+        }
+    }
 
 }
