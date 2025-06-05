@@ -121,3 +121,7 @@ class MusicLibrary{
     }
 
 }
+
+class User{
+    
+}
