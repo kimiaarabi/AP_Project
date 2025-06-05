@@ -318,5 +318,10 @@ class LoginService{
 }
 
 class ShopMusic{
-    
+    private String name;
+    private String artist;
+    private int rating;
+    private double price;
+    private int downloadCount;
+    private boolean isDownloaded;
 }
