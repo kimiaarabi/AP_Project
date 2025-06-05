@@ -368,4 +368,7 @@ class ShopMusic{
     public void setDownloaded(boolean downloaded) {
         isDownloaded = downloaded;
     }
+    public void increaseDownloadCount(){
+        downloadCount++;
+    }
 }
