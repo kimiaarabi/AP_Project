@@ -211,3 +211,7 @@ class User{
     }
 
 }
+
+class PremiumSubscription{
+    
+}
