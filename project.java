@@ -264,3 +264,7 @@ class UserDataBase{
         return null;
     }
 }
+
+class SignUpService{
+    
+}
