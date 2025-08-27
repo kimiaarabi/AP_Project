@@ -1,0 +1,64 @@
+// android/settings.gradle
+import java.util.Properties
+
+pluginManagement {
+    def props = new Properties()
+    file("local.properties").withInputStream { props.load(it) }
+    def flutterSdk = props.getProperty("flutter.sdk")
+    assert flutterSdk != null : "flutter.sdk not set in local.properties"
+
+    includeBuild("$flutterSdk/packages/flutter_tools/gradle")
+
+    repositories {
+        maven { url "https://maven.aliyun.com/repository/google" }
+        maven { url "https://maven.aliyun.com/repository/central" }
+        maven { url "https://jitpack.io" }
+
+        // مخازن با URL صریح
+        maven { url "https://maven.google.com" }      // Google Maven
+        maven { url "https://repo1.maven.org/maven2" } // Maven Central
+        maven { url "https://plugins.gradle.org/m2" }  // Gradle Plugin Portal
+
+        // اسم‌های کوتاه هم (برای اطمینان)
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+        maven { url "https://storage.googleapis.com/download.flutter.io" }
+    }
+
+    // اگر DSL گیر کرد، مستقیم ماژول AGP را resolve کن
+    resolutionStrategy {
+        eachPlugin {
+            if (requested.id.id == "com.android.application" ||
+                    requested.id.id == "com.android.library") {
+                useModule("com.android.tools.build:gradle:${requested.version}")
+            }
+        }
+    }
+}
+
+plugins {
+    id "dev.flutter.flutter-plugin-loader" version "1.0.0"
+    id "com.android.application" version "8.6.1" apply false
+    id "com.android.library"     version "8.6.1" apply false
+    id "org.jetbrains.kotlin.android" version "2.0.20" apply false
+}
+
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    repositories {
+        maven { url "https://maven.aliyun.com/repository/google" }
+        maven { url "https://maven.aliyun.com/repository/central" }
+        maven { url "https://jitpack.io" }
+
+        // همان مخازن پایین‌دستی (برای dependencies معمولی)
+        maven { url "https://maven.google.com" }
+        maven { url "https://repo1.maven.org/maven2" }
+        google()
+        mavenCentral()
+        maven { url "https://storage.googleapis.com/download.flutter.io" }
+    }
+}
+
+include ":app"

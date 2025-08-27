@@ -1,0 +1,38 @@
+// android/build.gradle  (Groovy)
+
+buildscript {
+    // برای بعضی پلاگین‌های قدیمی که هنوز از buildscript استفاده می‌کنند
+    repositories {
+        google()
+        mavenCentral()
+        // Flutter engine artifacts (خیلی مهم)
+        maven { url "https://storage.googleapis.com/download.flutter.io" }
+
+        // در صورت نیاز به میرورهای کمکی:
+        maven { url "https://maven.aliyun.com/repository/google" }
+        maven { url "https://maven.aliyun.com/repository/central" }
+        maven { url "https://jitpack.io" }
+    }
+    // معمولاً دیگر نیازی به dependencies اینجا نیست،
+    // چون AGP و Kotlin را در settings.gradle با plugins DSL تعریف کرده‌ایم.
+    // dependencies { }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        // Flutter engine artifacts
+        maven { url "https://storage.googleapis.com/download.flutter.io" }
+
+        // (اختیاری) میرورها برای دور زدن محدودیت‌ها
+        maven { url "https://maven.aliyun.com/repository/google" }
+        maven { url "https://maven.aliyun.com/repository/central" }
+        maven { url "https://jitpack.io" }
+    }
+}
+
+// تمیز کردن خروجی‌ها
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}

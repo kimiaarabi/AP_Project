@@ -1,0 +1,94 @@
+{
+  "usersById": {
+    "a1b2c3d4-e5f6-7890-1234-567890abcdef": {
+      "id": "a1b2c3d4-e5f6-7890-1234-567890abcdef",
+      "username": "mmdreza",
+      "email": "mmdreza@example.com",
+      "password": "Password123",
+      "credit": 250.5,
+      "premium": false,
+      "purchased": []
+    },
+    "b2c3d4e5-f6a7-8901-2345-67890abcdef0": {
+      "id": "b2c3d4e5-f6a7-8901-2345-67890abcdef0",
+      "username": "kimss",
+      "email": "kimss@example.com",
+      "password": "SecurePass2!",
+      "credit": 150.0,
+      "premium": true,
+      "purchased": [
+        "song-id-for-as-it-was"
+      ]
+    },
+    "c3d4e5f6-a7b8-9012-3456-7890abcdef01": {
+      "id": "c3d4e5f6-a7b8-9012-3456-7890abcdef01",
+      "username": "admin",
+      "email": "admin@example.com",
+      "password": "AdminPass#1",
+      "credit": 9999.0,
+      "premium": true,
+      "purchased": []
+    },
+    "d4e5f6a7-b8c9-0123-4567-890abcdef012": {
+      "id": "d4e5f6a7-b8c9-0123-4567-890abcdef012",
+      "username": "arman",
+      "email": "arman@example.com",
+      "password": "MyPasswordArman",
+      "credit": 50.75,
+      "premium": false,
+      "purchased": []
+    }
+  },
+  "songsById": {
+    "song-id-for-as-it-was": {
+      "id": "song-id-for-as-it-was",
+      "title": "As It Was",
+      "artist": "Harry Styles",
+      "category": "Pop",
+      "albumArtUrl": "https://picsum.photos/seed/asitwas/600/600",
+      "sourceUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-11.mp3",
+      "playCount": 150,
+      "ratingCount": 25,
+      "downloads": 5000,
+      "price": 1.29,
+      "ratingAverage": 4.8,
+      "addedAt": "2025-08-25T10:30:00Z"
+    },
+    "song-id-for-teen-spirit": {
+      "id": "song-id-for-teen-spirit",
+      "title": "Smells Like Teen Spirit",
+      "artist": "Nirvana",
+      "category": "Rock",
+      "albumArtUrl": "https://picsum.photos/seed/teen-spirit/600/600",
+      "sourceUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-12.mp3",
+      "playCount": 500,
+      "ratingCount": 120,
+      "downloads": 10000,
+      "price": 0.0,
+      "ratingAverage": 4.9,
+      "addedAt": "2025-08-24T11:00:00Z"
+    }
+  },
+  "commentsBySong": {
+    "song-id-for-as-it-was": [
+      {
+        "id": "comment-1",
+        "songId": "song-id-for-as-it-was",
+        "user": "kimss",
+        "text": "This is a great song!",
+        "likes": 15,
+        "dislikes": 1,
+        "createdAt": "2025-08-25T12:00:00Z"
+      },
+      {
+        "id": "comment-2",
+        "songId": "song-id-for-as-it-was",
+        "user": "arman",
+        "text": "I love Harry Styles!",
+        "likes": 22,
+        "dislikes": 0,
+        "createdAt": "2025-08-25T12:05:00Z"
+      }
+    ]
+  }
+}
