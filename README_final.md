@@ -19,6 +19,36 @@
 
 ---
 
+## 📸 اسکرین‌شات‌ها
+
+### 🔑 حساب کاربری
+![Account](assets/images/account.png)
+
+### 🗂️ دسته‌بندی‌ها
+![Categories](assets/images/categories.png)
+
+### ⭐ امتیازدهی و نظرات
+![Comments & Rate](assets/images/comment&rate.png)
+
+### ⬇️ دانلودها
+![Downloaded Music](assets/images/downloadedMusic.png)
+
+### 🏠 صفحه اصلی
+![Home](assets/images/home.png)
+
+### 🎶 لیست موسیقی
+![Music](assets/images/music.png)
+
+### 🛍️ فروشگاه موسیقی
+![Music Shop](assets/images/musicShop.png)
+
+### ↕️ مرتب‌سازی
+![Sort](assets/images/sort.png)
+
+### 🎨 تم (Dark/Light)
+![Theme](assets/images/theme.png)
+
+---
 ## 🧱 معماری
 
 ```
@@ -93,30 +123,7 @@ flutter run
 
 ---
 
-## 📸 اسکرین‌شات‌ها
 
-### کتابخانه و خانه
-![Home](screenshots/home.png)
-
-### فروشگاه و دسته‌بندی‌ها
-![Shop](screenshots/shop.png)
-![Categories](screenshots/categories.png)
-
-### لیست آهنگ‌ها
-![Songs List](screenshots/songs_list.png)
-
-### جزئیات آهنگ + امتیازدهی + نظرات
-![Song Detail](screenshots/song_detail.png)
-![Rating & Comments](screenshots/rating_comments.png)
-
-### پخش‌کننده موسیقی
-![Player](screenshots/player.png)
-
-### پروفایل (تم تاریک و روشن)
-![Profile Dark](screenshots/profile_dark.png)
-![Profile Light](screenshots/profile_light.png)
-
----
 
 ## 🧪 تست سریع (Demo Scenario)
 
